@@ -136,6 +136,10 @@ header {
     max-width: 320px;
     margin: 0 auto;
 }
+/*
+
+Активный код взят у Анны из последующего урока (он идет ниже); тот, который закомментирован - чисто мой для Д/З
+
 .banner {
     margin-bottom: 140px;
 }
@@ -143,7 +147,7 @@ header {
     position: relative;
     background-image: url(../images/banner.jpg);
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     height: 438px;
     color: #FFFFFF;
 }
@@ -191,4 +195,50 @@ header {
     background: #FBB731;
     border-radius: 5px;
     padding: 20px 5px;
+}
+*/
+.banner-box {
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+.banner-title {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.banner-title span {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #F37335;
+    border-radius: 14px;
+    padding: 5px 0;
+    display: block;
+    max-width: 96px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+.banner-text {
+    color: #FAF9F9;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 353px;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.banner-link {
+    font-size: 14px;
+    padding: 20px 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1E2F40;
+    background: #FBB731;
+    border-radius: 5px;
 }
