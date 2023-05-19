@@ -19,6 +19,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -236,12 +242,17 @@ header {
 }
 .banner-link {
     font-size: 14px;
-    padding: 20px 27px;
+    padding: 18px 25px;
     text-transform: uppercase;
     text-decoration: none;
     color: #1E2F40;
     background: #FBB731;
     border-radius: 5px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-header {
     display: flex;
@@ -379,6 +390,10 @@ header {
     border: none;
     gap: 9px;
 }
+.btn:hover {
+    background-color: #F37335;
+    cursor: pointer;
+}
 .menu-grid-icon {
     background-image: url(../images/cart-menu.svg);
     background-size: 18px 18px;
@@ -408,17 +423,17 @@ header {
     width: 63px;
     height: 56px;
 }
-.item-footer {
+.footer-item {
     flex: 0 0 auto;
 }
-.item-footer h2 {
+.footer-item h2 {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 19x;
     margin-top: 0;
 }
-.item-footer li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -426,25 +441,33 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.item-footer a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
 }
-.item-footer span {
+.footer-list a:hover {
+    color: #FBB731;
+}
+.footer-item span {
     color: #DEDEDE;
     display: block;
     font-weight: 400;
     margin-bottom: 2px;
 }
-.tel-footer ul {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
     font-size: 20px;
     color: #FBB731;
-    margin-top: 0;
     font-weight: 900;
 }
-.tel-footer li {
-    margin-bottom: 12px;
+.footer-list-tel a:hover {
+    color: #FFFFFF;
 }
 .footer-list {
     padding-left: 0;
