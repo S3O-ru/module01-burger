@@ -275,7 +275,9 @@ header {
     padding: 13px 30px;
     color: #443737;
     font-size: 15px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../images/arrow.svg);
     background-size: 12.79px 7.75px;
@@ -368,7 +370,8 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
@@ -478,6 +481,9 @@ header {
 .footer-list {
     padding-left: 0;
     list-style-type: none;
+}
+.footer-item .footer-item-tel {
+    display: none
 }
 .button-up {
     background-color: #FBB731;
@@ -704,7 +710,7 @@ header {
     }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 375px) {
     .bg {
         padding: 55px;
     }
@@ -721,8 +727,65 @@ header {
         background-position: 17% center;
         padding: 35px 24x 54px;
 }
+    .menu {
+        margin-bottom: -40px;
+}
+    .menu-title {
+        font-size: 27px;
+        margin-bottom: 24px;
+}
+    .menu-select {
+        margin: 0 0 26px 5px;
+        font-size: 12px;
+        width: 136px;
+        height: 41px;
+        margin-left: 51px;
+}
+    .menu-grid {
+        gap: 0 12px;
+}
+    .menu-other .menu-grid {
+       gap: 0 6px;
+}
+    .menu-grid-cover {
+        height: 280px;
+        margin-bottom: 23px;
+}
+    .menu-grid-cover img,
+    .menu-other .menu-grid-cover img {
+        height: 180px;
+}
+    .menu-other .menu-grid-cover {
+        height: 180px;
+}
+    .menu-grid-title {
+        font-size: 13px;
+        margin: -54px 0 0 0;
+}
+    .menu-grid-price {
+        font-size: 16px;
+        margin-bottom: 7px;
+}
+    .menu-header {
+        margin-top: -24px;
+}  
+    .menu-other {
+        overflow: hidden;
+        height: 312px;
+}
+    .menu-other .menu-grid-item {
+        flex: 0 0 160px;
+}
+    .menu-other .menu-grid-title {
+        padding-top: 45px;
+    }
+    .footer {
+        margin-top: 100px;
 }
 
+
+
+}
 @media (max-width: 360px) {
     .header-logo {
         width: 116px;
